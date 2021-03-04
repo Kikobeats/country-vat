@@ -20,10 +20,10 @@ $ npm install country-vat --save
 ```js
 const countryVat = require('country-vat')
 
-countriesVat('ES') // => 0.21
-countriesVat('ESP') // => 0.21
-countriesVat(724) // => 0.21
-countriesVat('Spain') // => 0.21
+countryVat('ES') // => 0.21
+countryVat('ESP') // => 0.21
+countryVat(724) // => 0.21
+countryVat('Spain') // => 0.21
 ```
 
 ## License
