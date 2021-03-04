@@ -16,7 +16,25 @@
   "bugs": {
     "url": "https://github.com/Kikobeats/country-vat/issues"
   },
-  "keywords": [],
+  "keywords": [
+    "billing",
+    "country",
+    "gst",
+    "invoice",
+    "iso-31661",
+    "iso-31661-alpha2",
+    "iso-31661-alpha3",
+    "iso-31661-name",
+    "iso-31661-numeric",
+    "money",
+    "sales",
+    "salestax",
+    "tax",
+    "union",
+    "vat",
+    "vat",
+    "vatmoss"
+  ],
   "dependencies": {
     "got": "~11.8.2",
     "iso-3166": "~3.1.0",
