@@ -1,9 +1,9 @@
 {
-  "name": "countries-vat",
+  "name": "country-vat",
   "description": "Get a country VAT rate. ISO 3166-1 compliant.",
-  "homepage": "https://nicedoc.io/Kikobeats/countries-vat",
+  "homepage": "https://nicedoc.io/Kikobeats/country-vat",
   "version": "0.0.0",
-  "main": "rates.json",
+  "main": "src/index.js",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
     "name": "Kiko Beats",
@@ -15,14 +15,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kikobeats/countries-vat.git"
+    "url": "git+https://github.com/Kikobeats/country-vat.git"
   },
   "bugs": {
-    "url": "https://github.com/Kikobeats/countries-vat/issues"
+    "url": "https://github.com/Kikobeats/country-vat/issues"
   },
   "keywords": [],
   "dependencies": {
     "got": "~11.8.2",
+    "iso-3166": "~3.1.0",
     "write-json-file": "~4.3.0"
   },
   "devDependencies": {
