@@ -9,10 +9,6 @@
     "name": "Kiko Beats",
     "url": "https://kikobeats.com"
   },
-  "files": [
-    "index.json",
-    "scripts"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kikobeats/country-vat.git"
@@ -30,6 +26,7 @@
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
     "ava": "latest",
+    "ci-publish": "latest",
     "conventional-github-releaser": "latest",
     "coveralls": "latest",
     "finepack": "latest",
@@ -42,18 +39,21 @@
     "prettier-standard": "latest",
     "standard": "latest",
     "standard-markdown": "latest",
-    "standard-version": "latest",
-    "ci-publish": "latest"
+    "standard-version": "latest"
   },
   "engines": {
     "node": ">= 12"
   },
+  "files": [
+    "index.json",
+    "scripts"
+  ],
   "scripts": {
-    "postinstall": "node scripts/postinstall",
     "clean": "rm -rf node_modules",
     "contributors": "(git-authors-cli && finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "standard-markdown README.md && standard",
+    "postinstall": "node scripts/postinstall",
     "postrelease": "npm run release:tags && npm run release:github && (ci-publish || npm publish --access=public)",
     "prerelease": "npm run update:check && npm run contributors",
     "pretest": "npm run lint",
