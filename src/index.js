@@ -14,7 +14,7 @@ const getValidator = input => {
 }
 
 module.exports = input => {
-  if (input === null || input === undefined) return null
+  if (input === null || input === undefined) return undefined
   const item = iso31661.find(getValidator(input))
-  return item ? rates[item.alpha2] : null
+  return item ? rates[item.alpha2] : undefined
 }

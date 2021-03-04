@@ -20,10 +20,8 @@ test('ISO 3166-1 name', t => {
   t.is(getVatRate('Spain'), 0.21)
 })
 
-test('uknown', t => {
-  t.is(getVatRate('XX'), null)
-  t.is(getVatRate(0), null)
-  t.is(getVatRate(''), null)
-  t.is(getVatRate(null), null)
-  t.is(getVatRate(undefined), null)
+test('invalid', t => {
+  ;['XX', 0, '', null, undefined, NaN].forEach(input => {
+    t.is(getVatRate(input), undefined)
+  })
 })
