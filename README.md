@@ -26,6 +26,7 @@ countryVat('Spain') // => 0.21
 ## Related
 
 - [is-european](https://github.com/Kikobeats/is-european) – Check if a country is part of the EU (European Union) or EEA (European Economic Area). ISO 3166-1 compliant.
+- [country-vat](https://github.com/Kikobeats/country-vat) – Given a request, get the country associated with it. ISO 3166-1 alpha-2 compliant.
 - [tom.js.org](https://tom.js.org) – tom 🐶 is a backoffice for your projects.
 
 ## License
