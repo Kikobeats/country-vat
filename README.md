@@ -2,8 +2,6 @@
 
 ![Last version](https://img.shields.io/github/tag/Kikobeats/country-vat.svg?style=flat-square)
 [![Coverage Status](https://img.shields.io/coveralls/Kikobeats/country-vat.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/country-vat)
-[![Dependency status](https://img.shields.io/david/Kikobeats/country-vat.svg?style=flat-square)](https://david-dm.org/Kikobeats/country-vat)
-[![Dev Dependencies Status](https://img.shields.io/david/dev/Kikobeats/country-vat.svg?style=flat-square)](https://david-dm.org/Kikobeats/country-vat#info=devDependencies)
 [![NPM Status](https://img.shields.io/npm/dm/country-vat.svg?style=flat-square)](https://www.npmjs.org/package/country-vat)
 
 > Get a country VAT rate. ISO 3166-1 compliant.
@@ -24,6 +22,11 @@ countryVat('ESP') // => 0.21
 countryVat(724) // => 0.21
 countryVat('Spain') // => 0.21
 ```
+
+## Related
+
+- [is-european](https://github.com/Kikobeats/is-european) – Check if a country is part of the EU (European Union) or EEA (European Economic Area). ISO 3166-1 compliant.
+- [tom.js.org](https://tom.js.org) – tom 🐶 is a backoffice for your projects.
 
 ## License
 
