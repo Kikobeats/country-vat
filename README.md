@@ -1,7 +1,6 @@
 # country-vat
 
 ![Last version](https://img.shields.io/github/tag/Kikobeats/country-vat.svg?style=flat-square)
-[![Build Status](https://img.shields.io/travis/com/Kikobeats/country-vat/master.svg?style=flat-square)](https://travis-ci.com/Kikobeats/country-vat)
 [![Coverage Status](https://img.shields.io/coveralls/Kikobeats/country-vat.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/country-vat)
 [![Dependency status](https://img.shields.io/david/Kikobeats/country-vat.svg?style=flat-square)](https://david-dm.org/Kikobeats/country-vat)
 [![Dev Dependencies Status](https://img.shields.io/david/dev/Kikobeats/country-vat.svg?style=flat-square)](https://david-dm.org/Kikobeats/country-vat#info=devDependencies)
