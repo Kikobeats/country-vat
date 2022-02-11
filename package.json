@@ -37,7 +37,7 @@
   ],
   "dependencies": {
     "got": "~11.8.2",
-    "iso-3166": "~3.1.0",
+    "iso-3166": "~4.0.1",
     "write-json-file": "~4.3.0"
   },
   "devDependencies": {
