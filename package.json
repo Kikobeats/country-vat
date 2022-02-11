@@ -63,8 +63,8 @@
     "node": ">= 12"
   },
   "files": [
-    "index.json",
-    "scripts"
+    "scripts",
+    "src"
   ],
   "scripts": {
     "clean": "rm -rf node_modules",
@@ -89,14 +89,14 @@
     ]
   },
   "nano-staged": {
-    "package.json": [
-      "finepack"
-    ],
     "*.js,!*.min.js,": [
       "prettier-standard"
     ],
     "*.md": [
       "standard-markdown"
+    ],
+    "package.json": [
+      "finepack"
     ]
   },
   "simple-git-hooks": {
