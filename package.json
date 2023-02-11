@@ -1,7 +1,7 @@
 {
   "name": "country-vat",
   "description": "Get a country VAT rate. ISO 3166-1 compliant.",
-  "homepage": "https://nicedoc.io/Kikobeats/country-vat",
+  "homepage": "https://github.com/Kikobeats/country-vat",
   "version": "1.0.6",
   "main": "src/index.js",
   "author": {
@@ -36,7 +36,7 @@
     "vatmoss"
   ],
   "dependencies": {
-    "got": "~11.8.2",
+    "got": "~11.8.6",
     "iso-3166": "~3.1.0",
     "write-json-file": "~4.3.0"
   },
@@ -66,7 +66,7 @@
   ],
   "scripts": {
     "clean": "rm -rf node_modules",
-    "contributors": "(git-authors-cli && finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
+    "contributors": "(npx git-authors-cli && npx finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "standard-markdown README.md && standard",
     "postinstall": "node scripts/postinstall",
