@@ -2,7 +2,7 @@
   "name": "country-vat",
   "description": "Get a country VAT rate. ISO 3166-1 compliant.",
   "homepage": "https://github.com/Kikobeats/country-vat",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "src/index.js",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
