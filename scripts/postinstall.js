@@ -14,5 +14,4 @@ got(
 )
   .json()
   .then(buffer => writeJsonFile('src/rates.json', mapper(buffer)))
-  .catch(err => console.error(err) && process.exit(0))
-  .then(process.exit)
+  .catch(error => console.error(error))
