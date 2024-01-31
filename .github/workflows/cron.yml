@@ -1,0 +1,34 @@
+name: cron
+
+on:
+  schedule:
+    # Cron job every Monday at 12:00
+    # https://crontab.guru/every-monday
+    - cron: '0 0 * * MON'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+          run_install: true
+      - name: Cron
+        run: |
+          git config --global user.email ${{ secrets.GIT_EMAIL }}
+          git config --global user.name ${{ secrets.GIT_USERNAME }}
+          npm run postinstall
+          git add src/rates.json
+          git commit -m 'build(update): rates' --no-verify
+          git push origin ${{ github.head_ref }} || true
+          curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/23f87055-9033-4ac5-9b87-7b528b60432b

@@ -36,9 +36,7 @@
     "vatmoss"
   ],
   "dependencies": {
-    "got": "~11.8.6",
-    "iso-3166": "~3.1.0",
-    "write-json-file": "~4.3.0"
+    "iso-3166": "~3.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "latest",
@@ -69,6 +67,7 @@
     "contributors": "(npx git-authors-cli && npx finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "lint": "standard-markdown README.md && standard",
+    "postinstall": "node scripts/postinstall.mjs",
     "postrelease": "npm run release:tags && npm run release:github && (ci-publish || npm publish --access=public)",
     "prerelease": "npm run update:check",
     "pretest": "npm run lint",
