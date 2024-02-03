@@ -29,6 +29,6 @@ jobs:
           git config --global user.name ${{ secrets.GIT_USERNAME }}
           npm run postinstall
           git add src/rates.json
-          git commit -m 'build(update): rates' --no-verify
+          git diff-index --quiet HEAD || git commit -m 'build(update): rates' --no-verify
           git push origin ${{ github.head_ref }} || true
           curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/23f87055-9033-4ac5-9b87-7b528b60432b
