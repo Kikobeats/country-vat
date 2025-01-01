@@ -2,8 +2,7 @@ import { writeFile } from 'fs/promises'
 
 const mapper = rates =>
   Object.keys(rates).reduce(
-    (acc, alpha2) => ({ ...acc, [alpha2]: rates[alpha2].rate }),
-    { AD: 0.045 }
+    (acc, alpha2) => ({ ...acc, [alpha2]: rates[alpha2].rate })
   )
 
 fetch(
