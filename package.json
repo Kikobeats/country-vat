@@ -1,6 +1,6 @@
 {
   "name": "country-vat",
-  "description": "Get a country VAT rate. ISO 3166-1 compliant.",
+  "description": "Look up VAT, GST, and sales-tax rates by country using ISO 3166-1 alpha-2/alpha-3 codes.",
   "homepage": "https://github.com/Kikobeats/country-vat",
   "version": "1.0.24",
   "main": "src/index.js",
@@ -20,19 +20,12 @@
   "keywords": [
     "billing",
     "country",
+    "eu",
     "gst",
     "invoice",
-    "iso-31661",
-    "iso-31661-alpha2",
-    "iso-31661-alpha3",
-    "iso-31661-name",
-    "iso-31661-numeric",
-    "money",
-    "sales",
-    "salestax",
+    "iso-3166",
+    "sales-tax",
     "tax",
-    "union",
-    "vat",
     "vat",
     "vatmoss"
   ],
@@ -87,6 +80,7 @@
   },
   "nano-staged": {
     "*.js": [
+      "npx @kikobeats/prettier-standard",
       "standard --fix"
     ],
     "*.md": [
