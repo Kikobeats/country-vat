@@ -1,12 +1,8 @@
 import { writeFile } from 'fs/promises'
+import { mapRates } from './map-rates.mjs'
 
 const URL =
   'https://raw.githack.com/valeriansaliou/node-sales-tax/master/res/sales_tax_rates.json'
-
-const mapper = rates =>
-  Object.fromEntries(
-    Object.entries(rates).map(([alpha2, { rate }]) => [alpha2, rate])
-  )
 
 fetch(URL)
   .then(res => {
@@ -14,6 +10,6 @@ fetch(URL)
     return res.json()
   })
   .then(rates =>
-    writeFile('src/rates.json', JSON.stringify(mapper(rates), null, 2))
+    writeFile('src/rates.json', JSON.stringify(mapRates(rates), null, 2))
   )
   .catch(error => console.error(error) || process.exit(1))
