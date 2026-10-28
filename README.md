@@ -1,8 +1,8 @@
 # country-vat
 
-![Last version](https://img.shields.io/github/tag/Kikobeats/country-vat.svg?style=flat-square)
-[![Coverage Status](https://img.shields.io/coveralls/Kikobeats/country-vat.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/country-vat)
-[![NPM Status](https://img.shields.io/npm/dm/country-vat.svg?style=flat-square)](https://www.npmjs.org/package/country-vat)
+[![Last version](https://img.shields.io/github/v/tag/Kikobeats/country-vat?style=flat-square)](https://github.com/Kikobeats/country-vat/releases)
+[![Coverage Status](https://img.shields.io/coverallsCoverage/github/Kikobeats/country-vat?style=flat-square)](https://coveralls.io/github/Kikobeats/country-vat)
+[![NPM Status](https://img.shields.io/npm/dm/country-vat?style=flat-square)](https://www.npmjs.com/package/country-vat)
 
 > Get a country VAT rate. ISO 3166-1 compliant.
 
