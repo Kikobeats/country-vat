@@ -2,7 +2,7 @@
   "name": "country-vat",
   "description": "Look up VAT, GST, and sales-tax rates by country using ISO 3166-1 alpha-2/alpha-3 codes.",
   "homepage": "https://github.com/Kikobeats/country-vat",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "main": "src/index.js",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
