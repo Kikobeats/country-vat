@@ -4,10 +4,9 @@ const URL =
   'https://raw.githack.com/valeriansaliou/node-sales-tax/master/res/sales_tax_rates.json'
 
 const mapper = rates =>
-  Object.keys(rates).reduce((acc, alpha2) => ({
-    ...acc,
-    [alpha2]: rates[alpha2].rate
-  }))
+  Object.fromEntries(
+    Object.entries(rates).map(([alpha2, { rate }]) => [alpha2, rate])
+  )
 
 fetch(URL)
   .then(res => {

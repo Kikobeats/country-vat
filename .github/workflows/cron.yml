@@ -29,7 +29,8 @@ jobs:
           git config --global user.email ${{ secrets.GIT_EMAIL }}
           git config --global user.name ${{ secrets.GIT_USERNAME }}
           npm run postinstall
+          npm test
           git add src/rates.json
           git diff-index --quiet HEAD || git commit -m 'build(update): rates' --no-verify
-          git push origin ${{ github.head_ref }} || true
+          git push origin HEAD
           curl -fsS -m 10 --retry 5 -o /dev/null https://hc-ping.com/23f87055-9033-4ac5-9b87-7b528b60432b

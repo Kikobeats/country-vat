@@ -25,3 +25,12 @@ test('invalid', t => {
     t.is(getVatRate(input), undefined)
   })
 })
+
+test('first country in the upstream list', t => {
+  t.is(getVatRate('AE'), 0.05)
+})
+
+test('rates are keyed by alpha-2 code only', t => {
+  const rates = require('../src/rates.json')
+  Object.keys(rates).forEach(key => t.regex(key, /^[A-Z]{2}$/))
+})
